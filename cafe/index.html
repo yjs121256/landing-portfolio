@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>온새미 커피 | 햇살동 골목의 작은 로스터리 카페 (포트폴리오 샘플)</title>
+<meta name="description" content="가상의 동네 로스터리 카페 '온새미 커피' 랜딩페이지 포트폴리오 샘플. 메뉴, 영업시간, 오시는 길, 예약 안내.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#3b2a20">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="온새미 커피 — 동네 로스터리 카페 (포트폴리오 샘플)">
+<meta property="og:description" content="반응형 카페 랜딩페이지 샘플입니다. 실제 업체가 아닌 가상의 업체입니다.">
+<meta property="og:image" content="https://yjs121256.github.io/landing-portfolio/cafe/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%233b2a20'/%3E%3Cpath d='M9 13h12v5a6 6 0 0 1-12 0z' fill='%23f4e9dc'/%3E%3C/svg%3E">
+<style>
+:root{--ink:#2a1d16;--brown:#3b2a20;--cream:#f7efe4;--paper:#fffaf3;--accent:#b5562c;--accent-d:#8f3f1c;--muted:#6b5a4e;--line:#e6d8c6;--r:18px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:"Pretendard","Apple SD Gothic Neo","Noto Sans KR","Gothic A1","Malgun Gothic",sans-serif;color:var(--ink);background:var(--paper);line-height:1.7;word-break:keep-all}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+.serif{font-family:"Noto Serif KR","Noto Serif CJK KR","Nanum Myeongjo",serif}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:8px 14px;z-index:99}.skip:focus{left:12px;top:12px}
+.sample-bar{background:var(--brown);color:#f7efe4;text-align:center;font-size:.85rem;padding:6px 12px}
+header.site{position:sticky;top:0;z-index:10;background:rgba(255,250,243,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-size:1.15rem;letter-spacing:-.02em}
+.nav ul{list-style:none;display:flex;gap:26px;margin:0;padding:0}
+.nav ul a{text-decoration:none;color:var(--muted);font-weight:500}.nav ul a:hover{color:var(--accent-d)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 22px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;border:0;cursor:pointer;font:inherit;font-weight:700;transition:background .2s}
+.btn:hover{background:var(--accent-d)}
+.btn.ghost{background:transparent;color:var(--brown);border:1.5px solid var(--brown)}.btn.ghost:hover{background:var(--brown);color:#fff}
+.menu-toggle{display:none;background:none;border:1.5px solid var(--line);border-radius:10px;padding:8px 10px;cursor:pointer}
+:focus-visible{outline:3px solid #1f6feb;outline-offset:2px}
+.hero{background:radial-gradient(1200px 500px at 85% 10%,#f0d9bf 0,transparent 60%),linear-gradient(180deg,var(--cream),var(--paper));padding:72px 0 80px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.eyebrow{display:inline-block;font-size:.85rem;font-weight:700;color:var(--accent-d);background:#f3dfcc;padding:4px 12px;border-radius:999px;margin-bottom:18px}
+h1{font-size:clamp(2.1rem,5vw,3.6rem);line-height:1.2;margin:0 0 18px;letter-spacing:-.03em}
+.lead{font-size:1.1rem;color:var(--muted);margin:0 0 30px;max-width:34em}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.hero-art{position:relative;aspect-ratio:1/1;border-radius:50% 50% 24px 24px;background:linear-gradient(160deg,#c98a5a,#7a4528);box-shadow:0 30px 60px -20px rgba(59,42,32,.45)}
+.hero-art svg{position:absolute;inset:12% 12% 8%;width:76%;height:80%}
+.facts{display:flex;flex-wrap:wrap;gap:28px;margin-top:36px;padding:0;list-style:none}
+.facts li{font-size:.95rem;color:var(--muted)}.facts strong{display:block;color:var(--ink);font-size:1.05rem}
+section{padding:88px 0}
+.sec-head{text-align:center;margin-bottom:48px}.sec-head h2{font-size:clamp(1.7rem,3.4vw,2.4rem);margin:0 0 10px;letter-spacing:-.02em}.sec-head p{color:var(--muted);margin:0}
+.story{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px}
+.card h3{margin:14px 0 6px;font-size:1.15rem}.card p{margin:0;color:var(--muted)}
+.icon{width:48px;height:48px;border-radius:14px;background:#f3dfcc;display:grid;place-items:center}
+#menu{background:var(--cream)}
+.tabs{display:flex;justify-content:center;gap:8px;margin-bottom:32px;flex-wrap:wrap}
+.tab{border:1.5px solid var(--brown);background:transparent;color:var(--brown);padding:8px 20px;border-radius:999px;cursor:pointer;font:inherit;font-weight:600}
+.tab[aria-selected="true"]{background:var(--brown);color:#fff}
+.menu-list{display:grid;grid-template-columns:repeat(2,1fr);gap:0 48px;list-style:none;margin:0;padding:0}
+.menu-list li{display:flex;align-items:baseline;gap:12px;padding:18px 0;border-bottom:1px dashed #cdb89f}
+.menu-list .name{font-weight:700}.menu-list .desc{display:block;font-size:.9rem;color:var(--muted);font-weight:400}
+.menu-list .dots{flex:1;border-bottom:1px dotted transparent}.menu-list .price{font-weight:700;color:var(--accent-d);white-space:nowrap}
+.tag{font-size:.72rem;background:var(--accent);color:#fff;border-radius:6px;padding:1px 7px;margin-left:6px;vertical-align:middle}
+.visit{display:grid;grid-template-columns:1fr 1.2fr;gap:32px;align-items:stretch}
+.hours{width:100%;border-collapse:collapse}.hours th,.hours td{text-align:left;padding:12px 0;border-bottom:1px solid var(--line)}.hours td{text-align:right;color:var(--muted)}
+.map{position:relative;border-radius:var(--r);overflow:hidden;min-height:320px;background:#efe6d8;border:1px solid var(--line)}
+.map svg{width:100%;height:100%;position:absolute;inset:0}
+.map-label{position:absolute;left:16px;bottom:16px;background:#fff;border-radius:12px;padding:10px 14px;font-size:.9rem;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+.reserve{background:linear-gradient(135deg,#3b2a20,#5a3a28);color:#f7efe4;border-radius:28px;padding:56px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.reserve h2{margin:0 0 12px;font-size:clamp(1.6rem,3vw,2.2rem)}.reserve p{color:#e8d8c6;margin:0}
+.reserve form{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.reserve label{font-size:.85rem;display:grid;gap:4px}
+.reserve input,.reserve select{font:inherit;padding:11px 12px;border-radius:10px;border:0;background:#fffaf3;color:var(--ink);width:100%}
+.reserve .full{grid-column:1/-1}
+.form-msg{grid-column:1/-1;min-height:1.4em;font-size:.92rem;color:#ffd9b8}
+footer{padding:40px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+.sample-note{display:inline-block;background:#f3dfcc;color:var(--accent-d);font-weight:700;padding:4px 12px;border-radius:8px}
+@media (max-width:900px){.hero-grid,.visit,.reserve{grid-template-columns:1fr}.hero-art{max-width:360px;margin:0 auto}.story{grid-template-columns:1fr 1fr}.reserve{padding:36px 24px}}
+@media (max-width:720px){
+ .menu-toggle{display:block}.nav ul{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:8px 20px}
+ .nav ul.open{display:flex}.nav ul a{display:block;padding:12px 0}.nav .btn.small{display:none}
+ .story,.menu-list{grid-template-columns:1fr}section{padding:64px 0}.hero{padding:48px 0 60px}
+ .reserve form{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<div class="sample-bar" role="note">포트폴리오 샘플입니다 (가상의 업체) · Portfolio sample — fictional business</div>
+<header class="site">
+ <nav class="wrap nav" aria-label="주 메뉴">
+  <a class="logo serif" href="#top" aria-label="온새미 커피 홈">
+   <svg width="34" height="34" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#3b2a20"/><path d="M9 13h12v5a6 6 0 0 1-12 0z" fill="#f4e9dc"/><path d="M21 14h2a2 2 0 0 1 0 4h-2" stroke="#f4e9dc" stroke-width="1.6" fill="none"/></svg>
+   온새미 커피
+  </a>
+  <ul id="nav-list">
+   <li><a href="#story">이야기</a></li><li><a href="#menu">메뉴</a></li><li><a href="#visit">오시는 길</a></li><li><a href="#reserve">예약</a></li>
+  </ul>
+  <a class="btn small" href="#reserve">자리 예약</a>
+  <button class="menu-toggle" aria-controls="nav-list" aria-expanded="false" aria-label="메뉴 열기">
+   <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="#3b2a20" stroke-width="2" stroke-linecap="round"/></svg>
+  </button>
+ </nav>
+</header>
+<main id="main">
+ <section class="hero" id="top" aria-labelledby="hero-title">
+  <div class="wrap hero-grid">
+   <div>
+    <span class="eyebrow">햇살동 골목 · 직접 볶는 로스터리</span>
+    <h1 id="hero-title" class="serif">천천히 내린 한 잔,<br>동네의 오후가 됩니다</h1>
+    <p class="lead">온새미 커피는 매주 소량으로 원두를 볶고, 손으로 한 잔씩 내립니다. 창가 자리에 앉아 잠시 쉬어 가세요.</p>
+    <div class="cta-row"><a class="btn" href="#reserve">자리 예약하기</a><a class="btn ghost" href="#menu">메뉴 보기</a></div>
+    <ul class="facts">
+     <li><strong>매일 10:00–21:00</strong>월요일 정기 휴무</li>
+     <li><strong>좌석 24석</strong>창가 · 테라스</li>
+     <li><strong>주차 2대</strong>건물 뒤편</li>
+    </ul>
+   </div>
+   <div class="hero-art" role="img" aria-label="김이 피어오르는 커피잔 일러스트">
+    <svg viewBox="0 0 200 200" aria-hidden="true">
+     <path d="M80 20c-8 12 8 18 0 32M100 14c-8 14 8 20 0 36M120 20c-8 12 8 18 0 32" stroke="#f7efe4" stroke-width="5" fill="none" stroke-linecap="round" opacity=".8"/>
+     <ellipse cx="100" cy="172" rx="78" ry="14" fill="#5a3320"/>
+     <path d="M40 80h120v38a60 60 0 0 1-120 0z" fill="#fffaf3"/>
+     <path d="M160 92h8a20 20 0 0 1 0 40h-12" stroke="#fffaf3" stroke-width="10" fill="none"/>
+     <ellipse cx="100" cy="80" rx="60" ry="10" fill="#6b3a22"/>
+     <path d="M88 78c6-6 18-6 24 0-6 4-18 4-24 0z" fill="#d9a67a"/>
+    </svg>
+   </div>
+  </div>
+ </section>
+
+ <section id="story" aria-labelledby="story-title">
+  <div class="wrap">
+   <div class="sec-head"><h2 id="story-title" class="serif">온새미가 지키는 세 가지</h2><p>‘온새미’는 가르거나 쪼개지 않은 생긴 그대로를 뜻하는 순우리말입니다.</p></div>
+   <div class="story">
+    <article class="card"><div class="icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="6" ry="9" fill="#8f3f1c" transform="rotate(30 12 12)"/><path d="M8 18c4-3 4-9 8-12" stroke="#f3dfcc" stroke-width="1.6" fill="none"/></svg></div><h3>주 2회 소량 로스팅</h3><p>볶은 지 2주가 지난 원두는 쓰지 않습니다. 신선한 향을 그대로 담아요.</p></article>
+    <article class="card"><div class="icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M4 8h16l-3 12H7z" fill="#8f3f1c"/><path d="M9 4h6" stroke="#8f3f1c" stroke-width="2" stroke-linecap="round"/></svg></div><h3>매일 굽는 디저트</h3><p>아침마다 매장에서 굽는 스콘과 바스크 치즈케이크를 준비합니다.</p></article>
+    <article class="card"><div class="icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24"><rect x="3" y="10" width="18" height="10" rx="2" fill="#8f3f1c"/><path d="M6 10V7a6 6 0 0 1 12 0v3" stroke="#8f3f1c" stroke-width="2" fill="none"/></svg></div><h3>조용한 작업 좌석</h3><p>콘센트가 있는 창가 바 좌석 8석. 평일 오후엔 노트북 작업도 편해요.</p></article>
+   </div>
+  </div>
+ </section>
+
+ <section id="menu" aria-labelledby="menu-title">
+  <div class="wrap">
+   <div class="sec-head"><h2 id="menu-title" class="serif">메뉴</h2><p>모든 커피는 디카페인으로 변경할 수 있어요 (+500원).</p></div>
+   <div class="tabs" role="tablist" aria-label="메뉴 분류">
+    <button class="tab" role="tab" id="t-coffee" aria-controls="p-coffee" aria-selected="true">커피</button>
+    <button class="tab" role="tab" id="t-tea" aria-controls="p-tea" aria-selected="false" tabindex="-1">논커피 · 차</button>
+    <button class="tab" role="tab" id="t-dessert" aria-controls="p-dessert" aria-selected="false" tabindex="-1">디저트</button>
+   </div>
+   <ul class="menu-list" role="tabpanel" id="p-coffee" aria-labelledby="t-coffee">
+    <li><span class="name">아메리카노<span class="desc">이번 주 블렌드 ‘햇살’ · 견과, 다크초콜릿</span></span><span class="dots"></span><span class="price">4,500원</span></li>
+    <li><span class="name">카페 라떼<span class="desc">고소한 우유와 진한 에스프레소</span></span><span class="dots"></span><span class="price">5,000원</span></li>
+    <li><span class="name">온새미 크림 라떼<span class="tag">대표</span><span class="desc">흑당 크림을 올린 시그니처</span></span><span class="dots"></span><span class="price">6,000원</span></li>
+    <li><span class="name">핸드드립<span class="desc">싱글 오리진 2종 중 선택</span></span><span class="dots"></span><span class="price">6,500원</span></li>
+    <li><span class="name">플랫 화이트<span class="desc">리스트레토 더블 샷</span></span><span class="dots"></span><span class="price">5,500원</span></li>
+    <li><span class="name">아인슈페너<span class="desc">달지 않은 수제 크림</span></span><span class="dots"></span><span class="price">6,000원</span></li>
+   </ul>
+   <ul class="menu-list" role="tabpanel" id="p-tea" aria-labelledby="t-tea" hidden>
+    <li><span class="name">유자 캐모마일<span class="desc">국산 유자청 + 캐모마일</span></span><span class="dots"></span><span class="price">5,500원</span></li>
+    <li><span class="name">말차 라떼<span class="desc">진한 말차, 단맛 조절 가능</span></span><span class="dots"></span><span class="price">5,800원</span></li>
+    <li><span class="name">생딸기 우유<span class="tag">계절</span><span class="desc">겨울~봄 한정</span></span><span class="dots"></span><span class="price">6,500원</span></li>
+    <li><span class="name">얼그레이<span class="desc">포트 서빙</span></span><span class="dots"></span><span class="price">5,000원</span></li>
+   </ul>
+   <ul class="menu-list" role="tabpanel" id="p-dessert" aria-labelledby="t-dessert" hidden>
+    <li><span class="name">바스크 치즈케이크<span class="tag">대표</span><span class="desc">매일 아침 6조각 한정</span></span><span class="dots"></span><span class="price">6,800원</span></li>
+    <li><span class="name">버터 스콘<span class="desc">클로티드 크림 · 잼 포함</span></span><span class="dots"></span><span class="price">4,200원</span></li>
+    <li><span class="name">무화과 파운드<span class="desc">한 조각</span></span><span class="dots"></span><span class="price">4,500원</span></li>
+    <li><span class="name">소금빵<span class="desc">오후 2시 출고</span></span><span class="dots"></span><span class="price">3,500원</span></li>
+   </ul>
+  </div>
+ </section>
+
+ <section id="visit" aria-labelledby="visit-title">
+  <div class="wrap">
+   <div class="sec-head"><h2 id="visit-title" class="serif">영업시간 · 오시는 길</h2><p>가상시 햇살동 골목길 12, 1층 (가상의 주소)</p></div>
+   <div class="visit">
+    <div class="card">
+     <table class="hours"><caption class="serif" style="text-align:left;font-weight:700;font-size:1.15rem;padding-bottom:8px">영업시간</caption>
+      <tbody>
+       <tr><th scope="row">화 – 금</th><td>10:00 – 21:00</td></tr>
+       <tr><th scope="row">토 – 일</th><td>11:00 – 22:00</td></tr>
+       <tr><th scope="row">월요일</th><td>정기 휴무</td></tr>
+       <tr><th scope="row">라스트 오더</th><td>마감 30분 전</td></tr>
+      </tbody>
+     </table>
+     <p style="margin:18px 0 0;color:var(--muted)">문의 <a href="tel:000-0000-0000">000-0000-0000</a> (샘플 번호)</p>
+    </div>
+    <div class="map" role="img" aria-label="지도 자리 표시: 햇살동 골목길 12, 공원 맞은편">
+     <svg viewBox="0 0 600 360" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <rect width="600" height="360" fill="#efe6d8"/>
+      <rect x="380" y="30" width="180" height="120" rx="14" fill="#cfe0c3"/>
+      <path d="M0 200H600M260 0V360M0 90L600 60" stroke="#fffaf3" stroke-width="22"/>
+      <path d="M0 290H600M470 0V360" stroke="#fffaf3" stroke-width="12"/>
+      <g transform="translate(300 160)"><path d="M0 0c-18-24-28-36-28-50a28 28 0 0 1 56 0c0 14-10 26-28 50z" fill="#b5562c"/><circle cy="-50" r="10" fill="#fff"/></g>
+     </svg>
+     <div class="map-label"><strong>지도 영역 (자리 표시)</strong><br>실제 제작 시 네이버·카카오 지도 삽입</div>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <section id="reserve" aria-labelledby="reserve-title">
+  <div class="wrap">
+   <div class="reserve">
+    <div>
+     <h2 id="reserve-title" class="serif">창가 자리, 미리 잡아 둘게요</h2>
+     <p>4인 이상 단체석과 소규모 모임 대관도 가능합니다. 예약은 방문 1시간 전까지 받아요.</p>
+    </div>
+    <form id="reserve-form" novalidate>
+     <label>이름<input name="name" autocomplete="name" required></label>
+     <label>인원<select name="people"><option>1명</option><option selected>2명</option><option>3명</option><option>4명 이상</option></select></label>
+     <label>날짜<input type="date" name="date" required></label>
+     <label>시간<input type="time" name="time" required></label>
+     <button class="btn full" type="submit">예약 요청 (데모)</button>
+     <p class="form-msg" role="status" aria-live="polite"></p>
+    </form>
+   </div>
+  </div>
+ </section>
+</main>
+<footer>
+ <div class="wrap foot">
+  <span>© 온새미 커피 · 가상시 햇살동 골목길 12</span>
+  <span class="sample-note">포트폴리오 샘플입니다 (가상의 업체)</span>
+ </div>
+</footer>
+<script>
+(function(){
+ var t=document.querySelector('.menu-toggle'),l=document.getElementById('nav-list');
+ t.addEventListener('click',function(){var o=l.classList.toggle('open');t.setAttribute('aria-expanded',o);});
+ l.addEventListener('click',function(e){if(e.target.tagName==='A'){l.classList.remove('open');t.setAttribute('aria-expanded','false');}});
+ var tabs=[].slice.call(document.querySelectorAll('[role=tab]'));
+ function sel(tab){tabs.forEach(function(x){var on=x===tab;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;document.getElementById(x.getAttribute('aria-controls')).hidden=!on;});tab.focus();}
+ tabs.forEach(function(tab,i){tab.addEventListener('click',function(){sel(tab)});tab.addEventListener('keydown',function(e){if(e.key==='ArrowRight')sel(tabs[(i+1)%tabs.length]);if(e.key==='ArrowLeft')sel(tabs[(i-1+tabs.length)%tabs.length]);});});
+ var f=document.getElementById('reserve-form'),m=f.querySelector('.form-msg');
+ f.addEventListener('submit',function(e){e.preventDefault();if(!f.checkValidity()){m.textContent='이름, 날짜, 시간을 입력해 주세요.';return;}m.textContent='데모 화면입니다. 실제로 예약이 접수되거나 전송되지 않습니다.';f.reset();});
+})();
+</script>
+</body>
+</html>

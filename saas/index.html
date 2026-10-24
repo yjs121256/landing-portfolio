@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tallyfern — Time tracking &amp; invoicing for small studios (Portfolio sample)</title>
+<meta name="description" content="Tallyfern is a fictional SaaS product. This responsive landing page is a portfolio sample showing hero, features, pricing, testimonials, FAQ and CTA sections.">
+<meta name="theme-color" content="#0b1020">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Tallyfern — SaaS landing page (Portfolio sample)">
+<meta property="og:description" content="Responsive SaaS landing page sample. Fictional product, not a real company.">
+<meta property="og:image" content="https://yjs121256.github.io/landing-portfolio/saas/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%237c5cff'/%3E%3Cpath d='M9 22V10h14M9 16h9' stroke='white' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{--bg:#0b1020;--bg2:#111833;--card:#151d3b;--line:#26305a;--text:#e9ecf8;--muted:#a8b0d3;--v:#7c5cff;--t:#2fd6b5;--r:16px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit}svg{display:block;max-width:100%}
+.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:#fff;color:#000;padding:8px 12px;z-index:99}
+:focus-visible{outline:3px solid var(--t);outline-offset:2px}
+.sample-bar{background:linear-gradient(90deg,var(--v),#4f7bff);color:#fff;text-align:center;font-size:.85rem;font-weight:600;padding:6px 12px}
+header{position:sticky;top:0;z-index:10;background:rgba(11,16,32,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;text-decoration:none;font-size:1.1rem;letter-spacing:-.01em}
+.nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0}.nav ul a{text-decoration:none;color:var(--muted);font-weight:500}.nav ul a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:12px;font:inherit;font-weight:700;text-decoration:none;border:0;cursor:pointer;background:var(--v);color:#fff;transition:transform .15s,background .15s}
+.btn:hover{background:#6a48ff;transform:translateY(-1px)}.btn.sec{background:transparent;border:1px solid var(--line);color:var(--text)}.btn.sec:hover{background:var(--bg2)}
+.hero{position:relative;overflow:hidden;padding:96px 0 72px;text-align:center}
+.hero::before{content:"";position:absolute;inset:-30% -10% auto;height:640px;background:radial-gradient(closest-side,rgba(124,92,255,.35),transparent),radial-gradient(closest-side at 70% 60%,rgba(47,214,181,.18),transparent);pointer-events:none}
+.pill{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);background:rgba(21,29,59,.7);padding:6px 14px;border-radius:999px;color:var(--muted);font-size:.88rem;position:relative}
+.pill b{color:var(--t)}
+h1{font-size:clamp(2.2rem,5.6vw,4rem);line-height:1.08;letter-spacing:-.035em;margin:22px auto 18px;max-width:14em;position:relative}
+.grad{background:linear-gradient(90deg,#b7a6ff,var(--t));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{color:var(--muted);font-size:1.15rem;max-width:38em;margin:0 auto 32px;position:relative}
+.cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative}
+.small{font-size:.85rem;color:var(--muted);margin-top:14px;position:relative}
+.mock{position:relative;margin:56px auto 0;max-width:980px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(180deg,#151d3b,#0f1630);box-shadow:0 40px 80px -30px rgba(124,92,255,.45);padding:14px;text-align:left}
+.mock-top{display:flex;gap:6px;padding:4px 6px 12px}.mock-top i{width:10px;height:10px;border-radius:50%;background:#3a4475}
+.mock-body{display:grid;grid-template-columns:180px 1fr;gap:14px}
+.side{background:#0f1630;border-radius:12px;padding:14px;display:grid;gap:10px;align-content:start}
+.side span{height:10px;border-radius:6px;background:#26305a}.side span.on{background:var(--v)}
+.dash{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.kpi{background:#0f1630;border-radius:12px;padding:14px}.kpi small{color:var(--muted)}.kpi strong{display:block;font-size:1.3rem}
+.chart{grid-column:1/-1;background:#0f1630;border-radius:12px;padding:14px;height:200px}
+section{padding:96px 0}
+.sec-head{text-align:center;max-width:640px;margin:0 auto 52px}.sec-head .k{color:var(--t);font-weight:700;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase}
+.sec-head h2{font-size:clamp(1.8rem,3.6vw,2.6rem);letter-spacing:-.025em;margin:8px 0 10px;line-height:1.15}.sec-head p{color:var(--muted);margin:0}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.feat{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px}
+.feat .ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:rgba(124,92,255,.15)}
+.feat h3{margin:16px 0 6px;font-size:1.12rem}.feat p{margin:0;color:var(--muted)}
+.toggle{display:flex;justify-content:center;align-items:center;gap:12px;margin:-24px 0 40px;color:var(--muted)}
+.switch{position:relative;width:52px;height:30px;border-radius:999px;background:var(--line);border:0;cursor:pointer;padding:0}
+.switch::after{content:"";position:absolute;top:4px;left:4px;width:22px;height:22px;border-radius:50%;background:#fff;transition:left .2s}
+.switch[aria-checked="true"]{background:var(--v)}.switch[aria-checked="true"]::after{left:26px}
+.save{font-size:.8rem;color:#0b1020;background:var(--t);border-radius:999px;padding:2px 10px;font-weight:700}
+.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+.plan{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:32px;display:flex;flex-direction:column}
+.plan.pop{border:2px solid var(--v);background:linear-gradient(180deg,#1b2350,#151d3b);position:relative}
+.plan.pop .tagline{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--v);color:#fff;font-size:.78rem;font-weight:700;padding:3px 12px;border-radius:999px;white-space:nowrap}
+.plan h3{margin:0;font-size:1.15rem}.plan .desc{color:var(--muted);margin:6px 0 18px;font-size:.95rem}
+.price{font-size:2.6rem;font-weight:800;letter-spacing:-.03em}.price small{font-size:1rem;color:var(--muted);font-weight:500}
+.plan ul{list-style:none;padding:0;margin:22px 0 28px;display:grid;gap:10px;color:#d5d9ef}
+.plan li{display:flex;gap:10px;align-items:flex-start}.plan li svg{flex:none;margin-top:4px}
+.plan .btn{margin-top:auto}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.quote{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px;margin:0;position:relative}
+.quote .s{position:absolute;top:14px;right:14px;font-size:.72rem;border:1px solid var(--line);border-radius:6px;padding:2px 8px;color:var(--muted)}
+.quote blockquote{margin:0 0 20px;font-size:1.02rem}.who{display:flex;align-items:center;gap:12px}
+.av{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-weight:800;color:#0b1020}
+.who small{display:block;color:var(--muted)}
+.note{text-align:center;color:var(--muted);font-size:.9rem;margin-top:22px}
+.faq{max-width:780px;margin:0 auto;display:grid;gap:12px}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 22px}
+summary{cursor:pointer;font-weight:700;padding:16px 0;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}summary::after{content:"+";color:var(--t);font-size:1.4rem;line-height:1}details[open] summary::after{content:"–"}
+details p{margin:0 0 18px;color:var(--muted)}
+.final{border-radius:28px;padding:64px 32px;text-align:center;background:radial-gradient(600px 300px at 20% 0,rgba(47,214,181,.25),transparent),linear-gradient(135deg,#2a1f6b,#1a2a6b);border:1px solid #3b3f8a}
+.final h2{font-size:clamp(1.8rem,3.6vw,2.6rem);margin:0 0 12px;letter-spacing:-.02em}.final p{color:#cfd5f5;margin:0 0 28px}
+.signup{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;max-width:520px;margin:0 auto}
+.signup input{flex:1 1 240px;min-width:0;padding:13px 14px;border-radius:12px;border:1px solid #4a51a0;background:#0f1630;color:#fff;font:inherit}
+.signup input::placeholder{color:#9aa3cc}
+.fmsg{min-height:1.4em;margin-top:12px;color:var(--t)}
+footer{border-top:1px solid var(--line);padding:36px 0;color:var(--muted);font-size:.9rem}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.sample-note{color:#fff;background:rgba(124,92,255,.25);border:1px solid var(--v);padding:4px 12px;border-radius:8px;font-weight:600}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (max-width:960px){.features,.quotes{grid-template-columns:1fr 1fr}.pricing{grid-template-columns:1fr;max-width:480px;margin:0 auto}.mock-body{grid-template-columns:1fr}.side{display:none}}
+@media (max-width:640px){.nav ul,.nav .btn.sec{display:none}.features,.quotes{grid-template-columns:1fr}section{padding:64px 0}.hero{padding:64px 0 48px}.dash{grid-template-columns:1fr 1fr}.dash .kpi:nth-child(3){display:none}.final{padding:44px 20px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="sample-bar" role="note">Portfolio sample — fictional business · 포트폴리오 샘플입니다 (가상의 업체)</div>
+<header>
+ <nav class="wrap nav" aria-label="Primary">
+  <a class="logo" href="#top" aria-label="Tallyfern home"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#7c5cff"/><path d="M9 22V10h14M9 16h9" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/></svg>Tallyfern</a>
+  <ul><li><a href="#features">Features</a></li><li><a href="#pricing">Pricing</a></li><li><a href="#testimonials">Customers</a></li><li><a href="#faq">FAQ</a></li></ul>
+  <div style="display:flex;gap:10px"><a class="btn sec" href="#pricing">Log in</a><a class="btn" href="#start">Start free</a></div>
+ </nav>
+</header>
+<main id="main">
+ <section class="hero" id="top" aria-labelledby="h1">
+  <div class="wrap">
+   <span class="pill"><b>New</b> Auto-reminders for overdue invoices</span>
+   <h1 id="h1">Track hours. <span class="grad">Send invoices.</span> Get paid on time.</h1>
+   <p class="lead">Tallyfern turns your team’s tracked time into clean, branded invoices in one click — built for design studios and small agencies of 2 to 50 people.</p>
+   <div class="cta-row"><a class="btn" href="#start">Start 14-day free trial</a><a class="btn sec" href="#features">See how it works</a></div>
+   <p class="small">No credit card required · Cancel anytime</p>
+   <div class="mock" role="img" aria-label="Illustration of the Tallyfern dashboard showing billable hours, unpaid invoices and a revenue chart">
+    <div class="mock-top" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="mock-body" aria-hidden="true">
+     <div class="side"><span class="on"></span><span></span><span></span><span></span><span style="width:60%"></span></div>
+     <div class="dash">
+      <div class="kpi"><small>Billable hours</small><strong>128.5 h</strong></div>
+      <div class="kpi"><small>Unpaid invoices</small><strong>$4,320</strong></div>
+      <div class="kpi"><small>Paid this month</small><strong>$18,940</strong></div>
+      <div class="chart">
+       <svg viewBox="0 0 600 170" preserveAspectRatio="none" width="100%" height="100%">
+        <defs><linearGradient id="g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#7c5cff" stop-opacity=".55"/><stop offset="1" stop-color="#7c5cff" stop-opacity="0"/></linearGradient></defs>
+        <path d="M0 140 L60 120 L120 128 L180 96 L240 104 L300 70 L360 82 L420 50 L480 60 L540 28 L600 36 V170 H0Z" fill="url(#g)"/>
+        <path d="M0 140 L60 120 L120 128 L180 96 L240 104 L300 70 L360 82 L420 50 L480 60 L540 28 L600 36" stroke="#a796ff" stroke-width="3" fill="none"/>
+        <path d="M0 150 L100 146 L200 138 L300 130 L400 118 L500 110 L600 100" stroke="#2fd6b5" stroke-width="2" stroke-dasharray="6 6" fill="none"/>
+       </svg>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <section id="features" aria-labelledby="f-title">
+  <div class="wrap">
+   <div class="sec-head"><span class="k">Features</span><h2 id="f-title">Everything between “start timer” and “payment received”</h2><p>Replace three tools and a spreadsheet with one calm workspace.</p></div>
+   <div class="features">
+    <article class="feat"><div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b7a6ff" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l3 2M9 2h6"/></svg></div><h3>One-click timers</h3><p>Start a timer from the browser, desktop or phone. Idle detection keeps hours honest.</p></article>
+    <article class="feat"><div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b7a6ff" stroke-width="2" stroke-linecap="round"><path d="M6 2h9l5 5v15H6z"/><path d="M14 2v6h6M9 13h8M9 17h5"/></svg></div><h3>Invoices from hours</h3><p>Pick a project and date range — Tallyfern builds the invoice with rates, taxes and your logo.</p></article>
+    <article class="feat"><div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b7a6ff" stroke-width="2" stroke-linecap="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9M13.7 21a2 2 0 0 1-3.4 0"/></svg></div><h3>Polite auto-reminders</h3><p>Friendly follow-ups go out 3, 7 and 14 days after the due date. You never have to chase.</p></article>
+    <article class="feat"><div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b7a6ff" stroke-width="2" stroke-linecap="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div><h3>Project profitability</h3><p>See budget burn, effective hourly rate and margin per client before it’s too late.</p></article>
+    <article class="feat"><div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b7a6ff" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0M17 11a3 3 0 1 0 0-6M22 21a5 5 0 0 0-5-5"/></svg></div><h3>Team &amp; roles</h3><p>Give freelancers limited access, approve timesheets weekly and lock billed hours.</p></article>
+    <article class="feat"><div class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b7a6ff" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><h3>Secure by default</h3><p>Two-factor sign-in, encrypted backups and exportable data. Your numbers stay yours.</p></article>
+   </div>
+  </div>
+ </section>
+
+ <section id="pricing" aria-labelledby="p-title" style="background:var(--bg2)">
+  <div class="wrap">
+   <div class="sec-head"><span class="k">Pricing</span><h2 id="p-title">Simple plans that grow with your studio</h2><p>All plans include unlimited clients and invoices.</p></div>
+   <div class="toggle"><span id="lbl-m">Monthly</span><button class="switch" role="switch" aria-checked="false" aria-labelledby="lbl-y" id="billing"></button><span id="lbl-y">Yearly</span><span class="save">Save 20%</span></div>
+   <div class="pricing">
+    <article class="plan"><h3>Solo</h3><p class="desc">For independent freelancers.</p><div class="price"><span data-m="0" data-y="0">$0</span><small>/month</small></div>
+     <ul><li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" stroke="#2fd6b5" stroke-width="3" fill="none"/></svg>1 user, 3 active projects</li><li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" stroke="#2fd6b5" stroke-width="3" fill="none"/></svg>Time tracking &amp; invoices</li><li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" stroke="#2fd6b5" stroke-width="3" fill="none"/></svg>Email support</li></ul>
+     <a class="btn sec" href="#start">Get started</a></article>
+    <article class="plan pop"><span class="tagline">Most popular</span><h3>Studio</h3><p class="desc">For small teams that bill by the hour.</p><div class="price"><span data-m="12" data-y="9.60">$12</span><small>/user/month</small></div>
+     <ul><li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" stroke="#2fd6b5" stroke-width="3" fill="none"/></svg>Unlimited projects</li><li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" stroke="#2fd6b5" stroke-width="3" fill="none"/></svg>Auto-reminders &amp; online payments</li><li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" stroke="#2fd6b5" stroke-width="3" fill="none"/></svg>Profitability reports</li><li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" stroke="#2fd6b5" stroke-width="3" fill="none"/></svg>Timesheet approvals</li></ul>
+     <a class="btn" href="#start">Start free trial</a></article>
+    <article class="plan"><h3>Agency</h3><p class="desc">For growing agencies with many clients.</p><div class="price"><span data-m="24" data-y="19.20">$24</span><small>/user/month</small></div>
+     <ul><li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" stroke="#2fd6b5" stroke-width="3" fill="none"/></svg>Everything in Studio</li><li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" stroke="#2fd6b5" stroke-width="3" fill="none"/></svg>Multi-currency &amp; custom domains</li><li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" stroke="#2fd6b5" stroke-width="3" fill="none"/></svg>SSO &amp; audit log</li><li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10" stroke="#2fd6b5" stroke-width="3" fill="none"/></svg>Priority support</li></ul>
+     <a class="btn sec" href="#start">Talk to sales</a></article>
+   </div>
+   <p class="note">Prices are illustrative for this portfolio sample.</p>
+  </div>
+ </section>
+
+ <section id="testimonials" aria-labelledby="q-title">
+  <div class="wrap">
+   <div class="sec-head"><span class="k">Testimonials · Sample</span><h2 id="q-title">What teams say (sample testimonials)</h2><p>Placeholder quotes from fictional people, shown for layout purposes only.</p></div>
+   <div class="quotes">
+    <figure class="quote"><span class="s">Sample</span><blockquote>“We stopped losing billable hours at the end of every month. Invoicing went from a half-day to ten minutes.”</blockquote><figcaption class="who"><span class="av" style="background:#b7a6ff" aria-hidden="true">MR</span><span>Mara Ellison<small>Studio lead, fictional design studio</small></span></figcaption></figure>
+    <figure class="quote"><span class="s">Sample</span><blockquote>“The auto-reminders are the best part. Clients pay faster and I don’t have to write awkward emails.”</blockquote><figcaption class="who"><span class="av" style="background:#2fd6b5" aria-hidden="true">JK</span><span>Jonah Kade<small>Freelance developer (fictional)</small></span></figcaption></figure>
+    <figure class="quote"><span class="s">Sample</span><blockquote>“Profitability reports showed us which retainer was underpriced. We fixed it in one renewal.”</blockquote><figcaption class="who"><span class="av" style="background:#ffc86b" aria-hidden="true">PS</span><span>Priya Sol<small>Ops manager, fictional agency</small></span></figcaption></figure>
+   </div>
+   <p class="note">All testimonials on this page are fictional samples, not real customer reviews.</p>
+  </div>
+ </section>
+
+ <section id="faq" aria-labelledby="faq-title" style="background:var(--bg2)">
+  <div class="wrap">
+   <div class="sec-head"><span class="k">FAQ</span><h2 id="faq-title">Frequently asked questions</h2></div>
+   <div class="faq">
+    <details open><summary>Is there really a free plan?</summary><p>Yes. The Solo plan is free forever for one user with up to three active projects.</p></details>
+    <details><summary>Can I import data from spreadsheets?</summary><p>You can import clients, projects and past time entries from a CSV file in a few minutes.</p></details>
+    <details><summary>Which payment methods can my clients use?</summary><p>Clients can pay invoices by card or bank transfer through supported payment providers.</p></details>
+    <details><summary>What happens when my trial ends?</summary><p>You choose a plan or move to Solo automatically. Nothing is deleted.</p></details>
+    <details><summary>Can I cancel anytime?</summary><p>Yes. Plans are month-to-month unless you choose yearly billing, and you can export your data at any time.</p></details>
+   </div>
+  </div>
+ </section>
+
+ <section id="start" aria-labelledby="cta-title">
+  <div class="wrap">
+   <div class="final">
+    <h2 id="cta-title">Get paid for every hour you work</h2>
+    <p>Set up your first project in under five minutes.</p>
+    <form class="signup" id="signup" novalidate>
+     <label class="sr" for="email">Work email</label>
+     <input id="email" type="email" placeholder="you@studio.com" autocomplete="email" required>
+     <button class="btn" type="submit">Start free trial</button>
+    </form>
+    <p class="fmsg" role="status" aria-live="polite"></p>
+   </div>
+  </div>
+ </section>
+</main>
+<footer>
+ <div class="wrap foot"><span>© Tallyfern (fictional product). Design &amp; build sample.</span><span class="sample-note">Portfolio sample — fictional business</span></div>
+</footer>
+<script>
+(function(){
+ var s=document.getElementById('billing'),ps=document.querySelectorAll('[data-m]');
+ s.addEventListener('click',function(){var y=s.getAttribute('aria-checked')!=='true';s.setAttribute('aria-checked',y);ps.forEach(function(p){var v=p.getAttribute(y?'data-y':'data-m');p.textContent='$'+v;});});
+ var f=document.getElementById('signup'),m=document.querySelector('.fmsg');
+ f.addEventListener('submit',function(e){e.preventDefault();m.textContent=f.checkValidity()?'Demo only — nothing was sent. This is a portfolio sample.':'Please enter a valid email address.';});
+})();
+</script>
+</body>
+</html>
